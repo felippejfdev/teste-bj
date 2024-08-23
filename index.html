@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="assets/download.png" type="image/x-icon" />
+  <title>Box-Jesus</title>
+</head>
+
+<body>
+
+  <div class="conteiner">
+    <img src="assets/WhatsApp Image 2024-05-22 at 15.06.44 1 (1).png" alt="" class="logo-2">
+  </div>
+
+  <div>
+    <img src="c:\Users\felip\Downloads\WhatsApp Image 2024-07-20 at 12.10.32 1.png" alt="" class="logo-1">
+  </div>
+
+  <div>
+    <img src="assets/download (1).png" alt="" class="img-insta">
+  </div>
+  <button class="button-insta"><a href="https://www.instagram.com/bjbox_jesus?igsh=MXgxcWJyZzA1OXY5dg=="
+      target="_blank">Instagram</a></button>
+
+
+  <div class="conteiner-2">
+    <img src="assets/WhatsApp Image 2024-07-20 at 09.15.31.jpeg" alt="" class="img-1">
+    <p>
+      <strong>NEGÓCIOS</strong>: O seu carro fala por si antes mesmo de chegar a qualquer lugar. Assim que notam a
+      presença sua, o brilho
+      do seu veículo já diz muito sobre você.
+      <br>
+      <br>
+      <strong>MISSÃO</strong>: Temos o compromisso de manter o seu veículo em condições de refletir suas características
+      principais,
+      garantindo que ele brilhe em todos os aspectos de sua vida.
+      <br>
+      <br>
+      <strong>VISÃO</strong>: Alcançar reconhecimento no segmento de detalhamento automotivo e manutenção, do primeiro
+      ao terceiro
+      escalão, com ênfase na estética automotiva.
+    </p>
+
+
+    <aside>
+      <li>Micropintura.</li>
+
+      <li>Cristalização de pintura.</li>
+
+      <li>Polimento.</li>
+
+      <li>Higienização.</li>
+
+      <li>Restauração de parachoque.</li>
+
+
+
+    </aside>
+
+    <img src="assets/WhatsApp Image 2024-06-28 at 11.03.58.jpeg" alt="" class="img-2">
+
+    <video src="assets/WhatsApp Video 2024-07-21 at 17.53.37.mp4"
+      poster="assets/WhatsApp Image 2024-07-21 at 17.15.35.jpeg" controls></video>
+
+
+
+
+    <form action="https://formspree.io/f/mqazerao" method="post" class="conteiner-3">
+      <input type="hidden" name="accessKey" value="2598d423-1fe7-40a4-9d85-15f8adf154bf" />
+      <input type="hidden" name="redirectTo" value="https://felippejfdev.github.io/bj-jss/" />
+      <input type="text" placeholder="Nome" name="name" class="input" required />
+      <input type="tel" placeholder="Telefone" name="phone" class="input-tel" required />
+      <textarea name="message" id="" placeholder="Tipo de serviço" class="text" required></textarea>
+      <button type="submit" class="button-form">Enviar</button>
+    </form>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.569494377752!2d-43.350264824948226!3d-21.719436780108445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989d18a98a5ad3%3A0xdf7d13469fa23820!2sR.%20Paulo%20Afonso%20Trist%C3%A3o%20-%20Vivendas%20da%20Serra%2C%20Juiz%20de%20Fora%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1716909278285!5m2!1spt-BR!2sbr">localização</iframe>
+
+    <footer>
+      <p class="rodape">
+        Desenvolvido por Felippe
+        <a href="https://wa.link/6a9w7e"><img src="assets/whatsapp.png" alt=""></a>
+      </p>
+    </footer>
+
+
+
+  </div>
+
+</body>
+<script>
+  const myObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show")
+      }
+      else {
+        entry.target.classList.remove("show")
+      }
+    })
+
+  })
+
+  const elements = document.querySelectorAll(".img-1")
+
+
+  elements.forEach((element) => myObserver.observe(element))
+</script>
+
+</html>
